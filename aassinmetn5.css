@@ -1,0 +1,278 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Baskervville', serif;
+    width:100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+.page-wrapper
+{
+    min-width: 1000px;
+    height: 100%;
+
+}
+/*Header style*/
+.header
+{
+    width:100vw;
+    max-height:75px;
+    background:linear-gradient(90deg, #0a0a22, #0a0a22, brown , brown); 
+    position: fixed;
+    border: 2px solid #0a0a22;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    
+}
+.div-header
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-img
+{
+    max-height: 75px;
+    position: relative;
+}
+img
+{
+    width: 50%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.header-list
+{
+    width:100%;
+
+}
+
+#navbar
+{
+    width:70%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    left: 20%;
+    z-index: 999;
+}
+#navbar li{
+    height: 100%;
+    width: 100%;
+    padding-right:10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+#navbar a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    text-decoration: none;
+    color: #FFFDD0;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+#navbar a:hover
+{
+    background-color: #0a0a22;
+    color: silver;
+    min-width: fit-content;
+}
+/*Header style*/
+/*Welcome style*/
+
+#welcome-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top:75px;
+    width: 100vw;
+    height: 900px;
+    z-index: -1;
+    border: 1px solid #0a0a22;
+    background: linear-gradient(90deg,#0a0a22 ,#0a0a22 34%,brown);
+}
+#welcome-h1
+{
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFFDD0;
+}
+#welcome-p
+{
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFFDD0;
+
+}
+/*Welcome style*/
+/*projects style*/
+#projects
+{
+    position: absolute;
+    z-index: -1;
+    top:975px;
+    width: 100%;
+    height: 1200px;
+    background: linear-gradient(90deg,#0a0a22 ,#0a0a22 34%,brown);
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#projects h1
+{
+    margin-top: 50px;
+    color: #FFFDD0;
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: bold;
+}
+#projects-container
+{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+    
+}
+.project-tile
+{
+    width:400px;
+    height: 450px;
+    
+
+}
+.project-tile a
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.project-tile img
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.project-tile p
+{
+
+    width: 100%;
+    height: 20%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    background-color: #FFFDD0;
+    border:1px solid;
+}
+/*projects style*/
+
+
+
+
+/*contact style*/
+
+.contact
+{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top:2175px;
+    background: linear-gradient(90deg,#0a0a22 ,#0a0a22 34%,brown);
+    color: #FFFDD0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #0a0a22 ;
+}
+
+.contact #contact-h1
+{
+    font-size: 60px;
+    color: #FFFDD0;
+}
+.contact #contact-p
+{
+    font-size: 20px;
+    font-style: italic;
+}
+#contact-logos
+{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+#contact-logos a
+{
+    text-decoration: none;
+    color: #FFFDD0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#contact-logos i
+{
+    font-size: x-large;
+}
+#contact-logos p
+{
+    font-size: x-large;
+}
+#contact-logos a:hover
+{
+    transform: translateY(8px);
+    transition: 0.5s;
+}
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
