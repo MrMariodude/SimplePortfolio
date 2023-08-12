@@ -1,4 +1,4 @@
-# Omar's Portfolio
+# Simple Portfolio
 
 Welcome to my portfolio webpage showcasing my web development projects and skills.
 
